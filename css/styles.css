@@ -19,6 +19,19 @@ body{
     max-width: 1140px;
     margin: 0 auto;
 }
+@media screen and (max-width: 1160px){
+    
+.container{
+    max-width: 760px;
+    }
+}
+@media screen and (max-width: 780px){
+    
+.container{
+    max-width: 380px;
+    
+        }
+}
 .flex{
 display: flex;
 flex-wrap: wrap;
@@ -50,7 +63,6 @@ flex-wrap: wrap;
 
 .post__link{
 display: block;
-
 text-decoration: none;
 }
 .post__author{
@@ -68,7 +80,8 @@ text-decoration: none;
 .post__author img,
 .post__img img{
 position: absolute;
-width: 100%;
+min-width: 100%;
+min-height: 100%;
 top: 50%;
 left: 50%;
 transform: translate( -50%,-50%);
@@ -127,8 +140,17 @@ text-transform: uppercase;}
         text-transform: uppercase;
 
     }
+   
     .post--lg .post__title{
         color: white;
         font-size: 3rem;
         max-width: 70%;
     }
+    @media screen and (max-width: 780px){
+    
+        .post--lg .post__title{
+            max-width: none;
+            
+                }
+        }
+    
